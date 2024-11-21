@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="shortcut icon" href="src/img/favicon_io/favicon.ico" type="image/x-icon">
+    <title>Vredeburg</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed w-full top-0 left-0 z-50 transition-all duration-300 ease-in-out bg-transparent">
+        <div class="container flex items-center justify-between py-4">
+            <!-- Logo -->
+            <a href="https://vredeburg.id/" target="_blank" class="text-2xl font-bold text-primary">Museum Vredeburg</a>
+            <!-- Link menu-->
+            <div id="menu" class="hidden md:flex md:space-x-6">
+                <a href="#home" class="text-dark hover:text-secondary transition">Beranda</a>
+                <a href="#sejarah" class="text-dark hover:text-secondary transition">Sejarah</a>
+                <a href="#pameran" class="text-dark hover:text-secondary transition">Pameran</a>
+                <a href="#acara" class="text-dark hover:text-secondary transition">Acara</a>
+                <a href="#galeri" class="text-dark hover:text-secondary transition">Galeri</a>
+                <a href="#maps" class="text-dark hover:text-secondary transition">Lokasi</a>
+            </div>
+            <!-- Hamburger -->
+            <button id="menu-btn" class="md:hidden text-2xl text-dark focus:outline-none">
+                ☰
+            </button>
+        </div>
+        <!-- Mamburger menu -->
+        <div id="mobile-menu" class="hidden bg-white md:hidden shadow-md">
+            <a href="#home" class="text-center block px-6 py-2 text-slate-600 hover:bg-slate-100 hover:text-secondary">Beranda</a>
+            <a href="#sejarah" class="text-center block px-6 py-2 text-slate-600 hover:bg-slate-100 hover:text-secondary">Sejarah</a>
+            <a href="#pameran" class="text-center block px-6 py-2 text-slate-600 hover:bg-slate-100 hover:text-secondary">Pameran</a>
+            <a href="#acara" class="text-center block px-6 py-2 text-slate-600 hover:bg-slate-100 hover:text-secondary">Acara</a>
+            <a href="#galeri" class="text-center block px-6 py-2 text-slate-600 hover:bg-slate-100 hover:text-secondary">Galeri</a>
+            <a href="#maps" class="text-center block px-6 py-2 text-slate-600 hover:bg-slate-100 hover:text-secondary">Lokasi</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="container min-h-screen flex items-center justify-center px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center text-center md:text-left">
+
+            <div>
+                <h1 class="text-4xl font-bold text-primary leading-snug">Selamat Datang di<br>Museum Vredeburg</h1>
+                <p class="mt-4 text-lg text-slate-600">Museum Bersejarah Terpopuler Dan Terbesar Di Yogyakarta.</p>
+                <ul class="mt-4 space-y-2 text-slate-700">
+                    <li class="font-medium">Buka Setiap Hari!</li>
+                    <li><span class="font-medium">Senin-Kamis: </span>08:00-20:00 WIB</li>
+                    <li><span class="font-medium">Jumat-Minggu: </span>08:00-22:00 WIB</li>
+                </ul>
+                <a href="https://vredeburg.id/tiket.html" class="mt-6 px-6 py-2 inline-block bg-primary text-white rounded hover:bg-secondary transition">Beli Tiket</a>
+
+            </div>
+            <div class="flex justify-center">
+                <img src="src/img/museum.png" alt="Museum Vredeburg" class="max-w-full h-auto">
+            </div>
+        </div>
+
+        <a href="#sejarah" class="absolute bottom-8 left-1/2 transform -translate-x-1/2 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg cursor-pointer hover:bg-secondary transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+        </a>
+    </section>
+
+    <!-- Sejarah -->
+    <section id="sejarah" class="bg-slate-100 py-16">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+
+            <div>
+                <h2 class="text-3xl font-bold text-primary mb-4">Sejarah Singkat</h2>
+                <p class="text-slate-700 leading-relaxed">Benteng Vredeburg Yogyakarta, dibangun sejak 1765 oleh VOC, awalnya bernama Rustenberg dan difungsikan untuk mengawasi Keraton Yogyakarta pasca-Perjanjian Giyanti. Setelah gempa 1867, namanya diubah menjadi Vredeburg oleh Daendels sebagai simbol perdamaian dengan Keraton. Benteng ini mengalami berbagai perubahan fungsi dan kepemilikan, mulai dari markas militer VOC, Belanda, Jepang, hingga menjadi markas militer RI pasca-kemerdekaan. Sejak 1992, sesuai SK Mendikbud, benteng ini resmi menjadi Museum Benteng Vredeburg Yogyakarta, Museum Khusus Perjuangan Nasional, yang kini menjadi saksi sejarah penting dan ikon wisata budaya Yogyakarta.</p>
+            </div>
+        
+            <div class="flex justify-center">
+                <img src="src/img/galeri/1.jpg" alt="Museum Vredeburg" class="rounded-lg shadow-md">
+            </div>
+        </div>
+    </section>
+
+    <!-- Pameran -->
+    <section id="pameran" class="bg-dark py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Pameran</h2>
+            <p class="text-white leading-relaxed mb-12">
+                Ruang pameran tetap terdiri dari 4 ruang yaitu ruang pameran diorama I sampai dengan ruang pameran diorama IV. 
+                Ruang pameran diorama I menempati bangunan M3 (eks perumahan perwira selatan I). 
+                Ruang pameran diorama II menempati bangunan M1 dan M2 (eks perumahan perwira utara I dan II). 
+                Ruang pameran diorama III menempati bangunan E lantai I (eks barak prajurit utara). 
+                Ruang pameran diorama IV menempati bangunan G lantai I (eks societeit).
+            </p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <!-- Card 1 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 transition-all duration-300 ease-in-out hover:bg-slate-100">
+                    <img src="src/img/galeri/5.jpg" alt="Museum Vredeburg" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <h3 class="text-xl font-semibold text-secondary mb-2">Diorama 1</h3>
+                    <p class="text-slate-600 mb-4">Diorama 1 terdiri dari 11 minirama yang menggambarkan peristiwa sejak periode Pangeran Diponegoro sampai masa pendudukan Jepang di Yogyakarta.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 transition-all duration-300 ease-in-out hover:bg-slate-100">
+                    <img src="src/img/galeri/8.jpg" alt="Museum Vredeburg" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <h3 class="text-xl font-semibold text-secondary mb-2">Diorama 2</h3>
+                    <p class="text-slate-600 mb-4">Diorama 2 terdiri dari 19 minirama yang menggambarkan peristiwa sejarah Proklamasi Kemerdekaan sampai dengan Agresi Militer Belanda di Indonesia.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 transition-all duration-300 ease-in-out hover:bg-slate-100">
+                    <img src="src/img/galeri/3.jpg" alt="Museum Vredeburg" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <h3 class="text-xl font-semibold text-secondary mb-2">Diorama 3</h3>
+                    <p class="text-slate-600 mb-4">Diorama 3 terdiri dari 18 minirama yang menggambarkan peristiwa sejak adanya Perjanjian Renville sampai pengakuan kedaulatan Republik Indonesia Serikat.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 transition-all duration-300 ease-in-out hover:bg-slate-100">
+                    <img src="src/img/galeri/6.jpg" alt="Museum Vredeburg" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <h3 class="text-xl font-semibold text-secondary mb-2">Diorama 4</h3>
+                    <p class="text-slate-600 mb-4">Diorama 4 terdiri dari 7 buah minirama yang menggambarkan peristiwa sejarah pada saat periode Negara Kesatuan Republik Indonesia sampai pada Masa Orde Baru.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Acara -->
+    <section id="acara" class="bg-white py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-primary mb-4 text-center">Acara</h2>
+            <p class="text-slate-700 text-center leading-relaxed mb-12">
+                Yuk, eksplor serunya kegiatan di Museum Vredeburg! Mulai dari workshop seni yang seru banget sampai pertunjukan musik yang bikin suasana makin asik. Temukan acara yang pas buat kamu dan bikin kunjunganmu jadi pengalaman yang nggak bakal terlupakan!
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 transition-all duration-300 ease-in-out hover:bg-slate-100">
+                    <img src="src/img/galeri/membatik.jpg" alt="Museum Vredeburg" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <h3 class="text-xl font-semibold text-secondary mb-2">Workshop Membatik</h3>
+                    <p class="text-slate-600 mb-4">Seni membatik dengan teknik tradisional bersama para ahli. Dalam workshop ini, peserta akan diberi kesempatan untuk membuat kain batik dengan desain unik.</p>
+                    <div class="text-sm text-slate-500 mb-4">
+                        <p><strong>Tanggal: </strong>17 November 2024</p>
+                        <p><strong>Waktu: </strong>09:00 - Selesai</p>
+                    </div>
+                    <a href="https://vredeburg.id/tiket.html" class="block bg-primary text-white text-center py-2 rounded-md hover:bg-secondary transition">Beli Tiket</a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 transition-all duration-300 ease-in-out hover:bg-slate-100">
+                    <img src="src/img/galeri/melukis-gerabah.jpg" alt="Museum Vredeburg" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <h3 class="text-xl font-semibold text-secondary mb-2">Melukis Gerabah</h3>
+                    <p class="text-slate-600 mb-4">Ciptakan karya seni unik dengan melukis di media gerabah. Acara ini cocok untuk segala usia, dari anak-anak hingga orang dewasa yang ingin mengasah kreativitas.</p>
+                    <div class="text-sm text-slate-500 mb-4">
+                        <p><strong>Tanggal: </strong>20 November 2024</p>
+                        <p><strong>Waktu: </strong>09:00 - Selesai</p>
+                    </div>
+                    <a href="https://vredeburg.id/tiket.html" class="block bg-primary text-white text-center py-2 rounded-md hover:bg-secondary transition">Beli Tiket</a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 transition-all duration-300 ease-in-out hover:bg-slate-100">
+                    <img src="src/img/galeri/tirta-abirawa.jpg" alt="Museum Vredeburg" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <h3 class="text-xl font-semibold text-secondary mb-2">Tirta Abirawa</h3>
+                    <p class="text-slate-600 mb-4">Tirta Abirawa menghadirkan seni gerak air yang dikolaborasikan dengan teknik pencahayaan yang selaras dengan tiap iramanya.</p>
+                    <div class="text-sm text-slate-500 mb-4">
+                        <p><strong>Tanggal: </strong>24 November 2024</p>
+                        <p><strong>Waktu: </strong>18:25 - 20:00</p>
+                    </div>
+                    <a href="https://vredeburg.id/tiket.html" class="block bg-primary text-white text-center py-2 rounded-md hover:bg-secondary transition">Beli Tiket</a>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 transition-all duration-300 ease-in-out hover:bg-slate-100">
+                    <img src="src/img/galeri/musikoloji.jpg" alt="Museum Vredeburg" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <h3 class="text-xl font-semibold text-secondary mb-2">Musikoloji</h3>
+                    <p class="text-slate-600 mb-4">Acara musik live ini akan menambah suasana romantis di museum pada malam hari. Pengunjung bisa menikmati alunan musik yang memanjakan telinga di lingkungan yang bersejarah.</p>
+                    <div class="text-sm text-slate-500 mb-4">
+                        <p><strong>Tanggal: </strong>24 November 2024</p>
+                        <p><strong>Waktu: </strong>19:00 - 21:00</p>
+                    </div>
+                    <a href="https://vredeburg.id/tiket.html" class="block bg-primary text-white text-center py-2 rounded-md hover:bg-secondary transition">Beli Tiket</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri -->
+    <section id="galeri" class="bg-slate-50 py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-primary mb-4">Galeri</h2>
+            <p class="text-slate-700 text-center leading-relaxed mb-12">
+                Temukan berbagai foto menarik yang menampilkan koleksi serta aktivitas yang ada di Museum Vredeburg. Jelajahi keindahan tempat ini melalui berbagai gambar yang mengabadikan momen spesial.</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                <img src="src/img/galeri/1.jpg" alt="Galeri 1" class="rounded-lg shadow-md hover:scale-105 transition">
+                <img src="src/img/galeri/2.jpg" alt="Galeri 1" class="rounded-lg shadow-md hover:scale-105 transition">
+                <img src="src/img/galeri/3.jpg" alt="Galeri 1" class="rounded-lg shadow-md hover:scale-105 transition">
+                <img src="src/img/galeri/8.jpg" alt="Galeri 1" class="rounded-lg shadow-md hover:scale-105 transition">
+            </div>
+            <a href="https://vredeburg.id/id/gallery/" target="_blank" class=" text-primary underline hover:text-secondary">Lihat lebih banyak..</a>
+        </div>
+    </section>
+
+    <!-- Denah -->
+    <section id="denah" class="bg-slate-100 py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-primary mb-4">Denah Ruangan</h2>
+            <p class="text-slate-700 text-center leading-relaxed mb-12">Cari tahu bagaimana tata letak ruangan di Museum Vredeburg agar kunjunganmu lebih nyaman dan menyenangkan. Dengan mengetahui denah, kamu bisa lebih mudah menjelajah dan menemukan spot menarik di dalam museum.</p>
+            <div class="flex flex-col items-center">
+                <img src="src/img/denah.jpg" alt="Denah Ruangan" class="rounded-lg shadow-md mb-6">
+                <a href="src/img/denah.jpg" download class=" text-primary underline hover:text-secondary">Download Denah</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lokasi Maps -->
+    <section id="maps" class="bg-slate-50 py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-primary mb-4">Lokasi</h2>
+            <p class="text-slate-700 text-center leading-relaxed mb-12">Museum Vredeburg terletak di jantung Kota Yogyakarta, sangat dekat dengan kawasan Malioboro yang ikonik.</p>
+            <div class="w-full h-96">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9069.000495752294!2d110.367106!3d-7.801457000000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5788c0b3eecf%3A0xb9611ce0232a9ff8!2sVredeburg%20Museum!5e1!3m2!1sen!2sid!4v1731916613862!5m2!1sen!2sid"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="container py-16">
+        <h2 class="text-3xl font-bold text-primary mb-6 text-center">FAQ</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <div class="space-y-6">
+                <details class="bg-white p-6 rounded-lg shadow-md transition-all duration-300 ease-in-out">
+                    <summary class="font-semibold text-primary cursor-pointer">Kapan Museum Vredeburg buka?</summary>
+                    <p class="mt-2 text-slate-600">Museum Vredeburg buka setiap hari dengan jam kunjungan sebagai berikut:
+                        <ul class="list-disc ml-6 mt-2">
+                            <li>Senin-Kamis: 08:00-20:00 WIB</li>
+                            <li>Jumat-Minggu: 08:00-22:00 WIB</li>
+                        </ul>
+                    </p>
+                </details>
+                <details class="bg-white p-6 rounded-lg shadow-md transition-all duration-300 ease-in-out">
+                    <summary class="font-semibold text-primary cursor-pointer">Bagaimana cara membeli tiket masuk?</summary>
+                    <p class="mt-2 text-slate-600">Tiket dapat dibeli langsung di loket museum atau melalui <a href="https://vredeburg.id/tiket.html" class="text-secondary hover:underline hover:text-primary">situs web resmi museum disini</a>. Pastikan untuk memeriksa harga tiket yang berlaku, serta promo atau diskon khusus yang mungkin tersedia.</p>
+                </details>
+            </div>
+
+            <div class="space-y-6">
+                <details class="bg-white p-6 rounded-lg shadow-md transition-all duration-300 ease-in-out">
+                    <summary class="font-semibold text-primary cursor-pointer">Apa saja fasilitas yang tersedia di Museum Vredeburg?</summary>
+                    <p class="mt-2 text-slate-600">Museum Vredeburg menyediakan berbagai fasilitas seperti ruang pameran, perpustakaan, auditorium, studi koleksi, area parkir luas, toilet, hingga mushola.</p>
+                </details>
+                <details class="bg-white p-6 rounded-lg shadow-md transition-all duration-300 ease-in-out">
+                    <summary class="font-semibold text-primary cursor-pointer">Apakah Museum Vredeburg menyediakan program magang?</summary>
+                    <p class="mt-2 text-slate-600">Museum Vredeburg menyediakan program magang atau PKL bagi siswa dan mahasiswa yang tertarik untuk mendapatkan pengalaman di preparasi, administrasi, konservasi, dokumentasi, dan publikasi serta promosi. Silakan cek informasi lengkap melalui <a href="https://layanan.vredeburg.id/" class="text-secondary hover:underline hover:text-primary">situs web disini </a>atau hubungi pihak museum untuk detail program.</p>
+                </details>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12 mt-20">
+        <div class="container grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- Penjelasan singkat-->
+            <div>
+                <h4 class="font-bold text-xl mb-4">Museum Vredeburg</h4>
+                <p class="text-sm">Museum Benteng Vredeburg Yogyakarta, di bawah pengelolaan Indonesian Heritage Agency (IHA), menawarkan koleksi lebih dari 7.000 benda bersejarah dan menjadi pusat kajian sejarah serta destinasi wisata ikonik dekat Malioboro. Dengan fokus pada pelestarian budaya, pembaruan fasilitas, dan program publik, museum ini menghadirkan ruang edukasi, budaya, dan rekreasi yang relevan bagi masyarakat.</p>
+                <ul class="mt-4 space-y-2">
+                    <li><a href="https://vredeburg.id/id/page/sejarah-singkat" class="hover:underline">Baca Sejarah Lengkap</a></li>
+                    <li><a href="src/img/denah.jpg" download class="hover:underline">Download Denah</a></li>
+                    <li><a href="https://vredeburg.id/tiket.html" class="hover:underline">Beli Tiket</a></li>
+                </ul>
+            </div>
+
+            <!-- Navigasi -->
+            <div>
+                <h4 class="font-bold text-xl mb-4">Navigasi</h4>
+                <ul class="space-y-2">
+                    <li><a href="#home" class="hover:text-secondary">Beranda</a></li>
+                    <li><a href="#sejarah" class="hover:text-secondary">Sejarah</a></li>
+                    <li><a href="#pameran" class="hover:text-secondary">Pameran</a></li>
+                    <li><a href="#acara" class="hover:text-secondary">Acara</a></li>
+                    <li><a href="#galeri" class="hover:text-secondary">Galeri</a></li>
+                    <li><a href="#maps" class="hover:text-secondary">Lokasi</a></li>
+                </ul>
+            </div>
+
+            <!-- Kontak -->
+            <div>
+                <h4 class="font-bold text-xl mb-4">Kontak & Alamat</h4>
+                <p class="text-sm">Alamat: Jalan Margo Mulyo No. 6 Yogyakarta 55121</p>
+                <p class="text-sm">Telepon: 0274 586934 / Fax : 0274 510996</p>
+                <p class="text-sm">WhatsApp: 081226099292</p>
+                <p class="text-sm">Email:  vredeburg@kemdikbud.go.id</p>
+
+                <!-- Icon medsos -->
+                <div class="mt-6 flex space-x-4">
+                    <a href="https://www.youtube.com/@museumbentengvredeburg" target="_blank" class="hover:text-secondary">
+                        <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/museum.benteng.vredeburg/" target="_blank" class="hover:text-secondary">
+                        <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-8 text-center border-t border-slate-500 pt-6">
+            <p class="text-sm">&copy; 2024. <a href="https://vredeburg.id/id/" class="hover:underline">Vredeburg.id</a></p>
+        </div>
+    </footer>
+
+    <script src="src/script.js"></script>
+</body>
+</html>
